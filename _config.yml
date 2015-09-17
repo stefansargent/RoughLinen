@@ -13,4 +13,9 @@ github_username:  jekyll
 # Build settings
 markdown: kramdown
 
-permalink: /:categories/:title.html
+
+collections:
+  contrib:
+    output: true
+    layout: contrib
+    title: "name"
