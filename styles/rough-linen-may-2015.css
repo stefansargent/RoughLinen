@@ -517,11 +517,12 @@ p a:active {
 
 /**********************************/
 
-#navMenu {
+.navbar {
     background-color: #F0F9FB;
     box-shadow: 1px 1px 4px #AAAAAA;
     -webkit-box-shadow: 1px 1px 4px #AAAAAA;
     font-family: "Courier New", monospace;
+    color: #000;
     font-size: 20px;
     font-weight: 300;
     height: 47px;
@@ -533,26 +534,26 @@ p a:active {
     text-transform: capitalize;
     width: 1000px;
 }
-
-#navMenu ul {
+/*
+.navbar ul {
     line-height: 45px;
     margin: 0;
     padding: 0;
     z-index: 1000;
 }
 
-#navMenu li {
+.navbar li {
     background-color: #F0F9FB;
     float: left;
     list-style: none;
     position: relative;
 }
 
-#navMenu li:hover {
+.navbar li:hover {
     background-color: #F0F9FB;
 }
 
-#navMenu ul li a {
+.navbar ul li a {
     border: 1px solid #F0F9FB;
     display: block;
     height: 45px;
@@ -562,7 +563,7 @@ p a:active {
     text-decoration: none;
 }
 
-#navMenu ul li a:hover {
+.navbar ul li a:hover {
     background-color: #F0F9FB;
     border: 1px solid #F0F9FB;
     border-radius: 3px;
@@ -573,7 +574,7 @@ p a:active {
     width: auto;
 }
 
-#navMenu ul li ul li a {
+.navbar ul li ul li a {
     height: 45px;
     line-height: 45px;
     padding-right: 0px;
@@ -581,7 +582,7 @@ p a:active {
     width: 140px;
 }
 
-#navMenu ul li ul li a:hover {
+.navbar ul li ul li a:hover {
     height: 45px;
     line-height: 45px;
     padding-right: 0px;
@@ -590,7 +591,7 @@ p a:active {
     width: 140px;
 }
 
-#navMenu ul ul {
+.navbar ul ul {
     box-shadow: 1px 2px 5px #AAAAAA;
     -webkit-box-shadow: 1px 2px 5px #AAAAAA;
     position: absolute;
@@ -598,14 +599,14 @@ p a:active {
     top: 47px;
 }
 
-#navMenu ul li:hover ul {
+.navbar ul li:hover ul {
     padding-right: 0px;
     padding-left: 0px;
     visibility: visible;
     width: 140px;
 }
 
-#navMenu ul li:hover ul li a:hover {
+.navbar ul li:hover ul li a:hover {
     background-color: #F0F9FB;
     color: #000;
     padding-right: 0px;
@@ -614,7 +615,7 @@ p a:active {
     width: 140px;
 }
 
-#navMenu a.thispage {
+.navbar a.thispage {
     color: #000;
     display: block;
     height: 45px;
@@ -622,3 +623,4 @@ p a:active {
     text-decoration: underline;
     width: auto;
 }
+*/
