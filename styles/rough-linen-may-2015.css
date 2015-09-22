@@ -20,7 +20,13 @@
     padding-top: 0px;
     width: 1000px;
 }
-e
+
+.container  .img-responsive {
+    display: block;
+    width: auto;
+    max-height: 100%;
+}
+
 .gallery-tile {
     float: left;
     margin: 20px;
