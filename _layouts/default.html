@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+    <!DOCTYPE html>
 <html>
 {% include head.html %}
 
@@ -24,12 +24,14 @@
     })(window, document, 'script', 'dataLayer', 'GTM-5VGPX5');
     </script>
     <!-- End Google Tag Manager -->
-    <div id="wrapper">
-        <div class="row">{% include header.html %}</div>
-        <div class="row">
-            {{ content }}
-        </div>
-        <div class="row">{% include footer.html %}</div>
+    <div class="row">
+    {% include header.html %}</div>
+    <div class="row">
+        <a href="/index.html"><img class="logo" src="/images/rough-linen-logo.gif"></a>
+        {{ content }}
+    </div>
+    <div class="row">
+        {% include footer.html %}
     </div>
 </body>
 

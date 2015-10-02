@@ -3,59 +3,85 @@ layout: default
 --- 
 {% assign name = page.path | split:"/" | last | split:"." | first %}
 <div class="container">
-    <div class="row">
-        <div class="col-md-5">
-            <a href="/index.html"><img class="logo" src="/images/rough-linen-logo.gif" title="Rough Linen™ real, natural linen, the way it used to be" alt="Rough Linen™ real, natural linen, the way it used to be"></a>
-        </div>
-        <div class="col-md-5 text-center">
-            <a href="{{ pagination.previous_page_path }}"><img src="/images/arrow-for-community-left.jpg" alt="" height="42" width="42" border="0" /></a>
-            <font size="6" face="Verdana, Arial, Helvetica, sans-serif">{{name}}</font>
-            <a href="{{ pagination.next_page_path }}"><img src="/images/arrow-for-community-right.jpg" alt=""  height="42" width="42" border="0" /></a>
-        </div>
-    </div>
     <div class="hidden-xs hidden-sm col-sm-4 col-md-4">
-        <div>
-            <img src="/contrib/{{name}}/{{name}}_1.jpg" alt="" class="img-responsive" border="0" /></a>
-        </div>
+        <a href="/index.html"><img class="logo" src="/images/rough-linen-logo.gif"></a>
+        <img src="/contrib/{{name}}/{{name}}_title.jpg" alt="" class="img-responsive" border="0" /></a>
     </div>
-    <div class="col-xs-10 col-sm-10 col-md-6">
+    <div class="col-xs-12 col-sm-12 col-md-6">
+        <div class="row">
+            <div class="text-center">
+                <p><font size="7" face="Verdana, Arial, Helvetica, sans-serif">{{name}}</font></p>
+            </div>
+        </div>
         <div class="row">
             <p>{{content}}</p>
         </div>
         <div class="row">
-            <div class="col-xs-6 col-md-3">
-                <a href="/contrib/{{name}}/{{name}}_2.jpg" class="thumbnail">
-                    <img src="/contrib/{{name}}/{{name}}_2.jpg" alt=""  class="img-responsive" border="0" /></a>
+            <!-- The Bootstrap Image Gallery lightbox, should be a child element of the document body -->
+            <div id="blueimp-gallery" class="blueimp-gallery">
+                <!-- The container for the modal slides -->
+                <div class="slides"></div>
+                <!-- Controls for the borderless lightbox -->
+                <h3 class="title"></h3>
+                <a class="prev">‹</a>
+                <a class="next">›</a>
+                <a class="close">×</a>
+                <a class="play-pause"></a>
+                <ol class="indicator"></ol>
+                <!-- The modal dialog, which will be used to wrap the lightbox content -->
+                <div class="modal fade">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" aria-hidden="true">&times;</button>
+                                <h4 class="modal-title"></h4>
+                            </div>
+                            <div class="modal-body next"></div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default pull-left prev">
+                                    <i class="glyphicon glyphicon-chevron-left"></i> Previous
+                                </button>
+                                <button type="button" class="btn btn-primary next">
+                                    Next
+                                    <i class="glyphicon glyphicon-chevron-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="col-xs-6 col-md-3">
-                <a href="/contrib/{{name}}/{{name}}_3.jpg" class="thumbnail">
-                    <img src="/contrib/{{name}}/{{name}}_3.jpg" alt="" style="height:141px;" class="img-responsive"  border="0" /></a>
+                <a href="/contrib/{{name}}/{{name}}_1.jpg" data-gallery>
+                    <img src="/contrib/{{name}}/{{name}}_1_thumb.jpg" alt="" class="img-responsive" border="0" /></a>
             </div>
             <div class="col-xs-6 col-md-3">
-                <a href="/contrib/{{name}}/{{name}}_4.jpg" class="thumbnail">
-                    <img src="/contrib/{{name}}/{{name}}_4.jpg" alt="" style="height:141px;" class="img-responsive"  border="0" /></a>
+                <a href="/contrib/{{name}}/{{name}}_2.jpg" data-gallery>
+                    <img src="/contrib/{{name}}/{{name}}_2_thumb.jpg" alt="" class="img-responsive" border="0" /></a>
             </div>
             <div class="col-xs-6 col-md-3">
-                <a href="/contrib/{{name}}/{{name}}_5.jpg" class="thumbnail">
-                    <img src="/contrib/{{name}}/{{name}}_5.jpg" alt="" style="height:141px;" class="img-responsive"  border="0" /></a>
+                <a href="/contrib/{{name}}/{{name}}_3.jpg" data-gallery>
+                    <img src="/contrib/{{name}}/{{name}}_3_thumb.jpg" alt="" class="img-responsive" border="0" /></a>
             </div>
             <div class="col-xs-6 col-md-3">
-                <a href="/contrib/{{name}}/{{name}}_6.jpg" class="thumbnail">
-                    <img src="/contrib/{{name}}/{{name}}_6.jpg" alt="" style="height:141px;" class="img-responsive"  border="0" /></a>
+                <a href="/contrib/{{name}}/{{name}}_4.jpg" data-gallery>
+                    <img src="/contrib/{{name}}/{{name}}_4_thumb.jpg" alt="" class="img-responsive" border="0" /></a>
             </div>
             <div class="col-xs-6 col-md-3">
-                <a href="/contrib/{{name}}/{{name}}_7.jpg" class="thumbnail">
-                    <img src="/contrib/{{name}}/{{name}}_7.jpg" alt="" style="height:141px;" class="img-responsive"  border="0" /></a>
+                <a href="/contrib/{{name}}/{{name}}_5.jpg" data-gallery>
+                    <img src="/contrib/{{name}}/{{name}}_5_thumb.jpg" alt="" class="img-responsive" border="0" /></a>
             </div>
             <div class="col-xs-6 col-md-3">
-                <a href="/contrib/{{name}}/{{name}}_8.jpg" class="thumbnail">
-                    <img src="/contrib/{{name}}/{{name}}_8.jpg" alt="" style="height:141px;" class="img-responsive"  border="0" /></a>
+                <a href="/contrib/{{name}}/{{name}}_6.jpg" data-gallery>
+                    <img src="/contrib/{{name}}/{{name}}_6_thumb.jpg" alt="" class="img-responsive" border="0" /></a>
             </div>
             <div class="col-xs-6 col-md-3">
-                <a href="/contrib/{{name}}/{{name}}_9.jpg" class="thumbnail">
-                    <img src="/contrib/{{name}}/{{name}}_9.jpg" alt="" style="height:141px;" class="img-responsive"  border="0" /></a>
+                <a href="/contrib/{{name}}/{{name}}_7.jpg" data-gallery>
+                    <img src="/contrib/{{name}}/{{name}}_7_thumb.jpg" alt="" class="img-responsive" border="0" /></a>
+            </div>
+            <div class="col-xs-6 col-md-3">
+                <a href="/contrib/{{name}}/{{name}}_8.jpg" data-gallery>
+                    <img src="/contrib/{{name}}/{{name}}_8_thumb.jpg" alt="" class="img-responsive" border="0" /></a>
             </div>
         </div>
     </div>
 </div>
-<!-- community member -->
