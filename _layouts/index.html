@@ -28,15 +28,14 @@
         <div class="row">
             {% include header.html %}
         </div>
-
         {% include css_slider.html %}
-        
         <div class="container">
-            <div class="col-md-push-1 col-md-12">
-                <div class="row">{{ content }}</div>
+            <div class="row">
+                <div class="col-md-push-1 col-md-10">{{ content }}</div>
             </div>
-                <div class="row">{% include footer.html %}</div>
+            <div class="row">{% include footer.html %}</div>
         </div>
+    </div>
 </body>
 
 </html>
